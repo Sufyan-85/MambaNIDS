@@ -1,0 +1,569 @@
+{
+  "per_model": {
+    "cnn_bilstm_mha": {
+      "basic": {
+        "accuracy": 0.939206268958544,
+        "precision_macro": 0.8881092350913999,
+        "recall_macro": 0.8888676061212657,
+        "f1_macro": 0.8875189934917584,
+        "auc_roc_ovr": 0.9936968506593624,
+        "fpr": 0.006739787531926366
+      },
+      "advanced": {
+        "kappa": 0.9303104607967758,
+        "kappa_ci_low": 0.9275808952223485,
+        "kappa_ci_high": 0.9334012726772342,
+        "mcc": 0.9305168935027092,
+        "mcc_ci_low": 0.9274286371060871,
+        "mcc_ci_high": 0.9336712535363597,
+        "accuracy_ci_low": 0.9366776731547017,
+        "accuracy_ci_high": 0.9417032671890798,
+        "f1_macro_ci_low": 0.879849310307432,
+        "f1_macro_ci_high": 0.8942527388058812,
+        "ece": 0.03490169881866569,
+        "brier": 0.10258571058511734,
+        "per_class": [
+          {
+            "class": "normal",
+            "precision": 0.9892226862454533,
+            "recall": 0.9791972262968396,
+            "f1": 0.9841844256802037,
+            "support": 7499
+          },
+          {
+            "class": "backdoor",
+            "precision": 0.8620283018867925,
+            "recall": 0.9749916638879627,
+            "f1": 0.9150367704584572,
+            "support": 2999
+          },
+          {
+            "class": "ddos",
+            "precision": 0.9828551434569629,
+            "recall": 0.9369579719813209,
+            "f1": 0.9593579234972678,
+            "support": 2998
+          },
+          {
+            "class": "dos",
+            "precision": 0.9292895442359249,
+            "recall": 0.9246415471823941,
+            "f1": 0.9269597192044124,
+            "support": 2999
+          },
+          {
+            "class": "injection",
+            "precision": 0.9586607447898873,
+            "recall": 0.9356452150716905,
+            "f1": 0.9470131623354708,
+            "support": 2999
+          },
+          {
+            "class": "password",
+            "precision": 0.978890023833844,
+            "recall": 0.9586528842947649,
+            "f1": 0.9686657681940701,
+            "support": 2999
+          },
+          {
+            "class": "scanning",
+            "precision": 0.9468892261001517,
+            "recall": 0.8322774258086029,
+            "f1": 0.8858917480035492,
+            "support": 2999
+          },
+          {
+            "class": "ransomware",
+            "precision": 0.9251215559157212,
+            "recall": 0.9513333333333334,
+            "f1": 0.9380443714050944,
+            "support": 3000
+          },
+          {
+            "class": "xss",
+            "precision": 0.8541473943879124,
+            "recall": 0.9236412137379126,
+            "f1": 0.887536046139058,
+            "support": 2999
+          },
+          {
+            "class": "mitm",
+            "precision": 0.4539877300613497,
+            "recall": 0.4713375796178344,
+            "f1": 0.4625,
+            "support": 157
+          }
+        ]
+      },
+      "complexity": {
+        "n_params": 3976778,
+        "flops_per_forward": 4050124800,
+        "gflops_per_forward": 4.0501248,
+        "throughput_samples_per_sec": 340884.27511501545,
+        "latency_ms_mean": 1.5019759999995586,
+        "peak_memory_mb": 119.5224609375,
+        "batch_size": 512,
+        "device": "cuda:0"
+      }
+    },
+    "cnn_lstm": {
+      "basic": {
+        "accuracy": 0.9379423660262892,
+        "precision_macro": 0.8915004898580513,
+        "recall_macro": 0.8822646257732505,
+        "f1_macro": 0.8855696073082319,
+        "auc_roc_ovr": 0.9937857957542746,
+        "fpr": 0.006908750693599012
+      },
+      "advanced": {
+        "kappa": 0.9288338128978664,
+        "kappa_ci_low": 0.9260487870336942,
+        "kappa_ci_high": 0.9319350635170365,
+        "mcc": 0.9290196974729023,
+        "mcc_ci_low": 0.9260605182073383,
+        "mcc_ci_high": 0.9321922952839451,
+        "accuracy_ci_low": 0.9353813827098079,
+        "accuracy_ci_high": 0.9406281597573306,
+        "f1_macro_ci_low": 0.8779080977791561,
+        "f1_macro_ci_high": 0.8928345522614991,
+        "ece": 0.033825538887692255,
+        "brier": 0.10658961534500122,
+        "per_class": [
+          {
+            "class": "normal",
+            "precision": 0.9848890077560846,
+            "recall": 0.9821309507934392,
+            "f1": 0.9835080456700274,
+            "support": 7499
+          },
+          {
+            "class": "backdoor",
+            "precision": 0.879951980792317,
+            "recall": 0.9776592197399133,
+            "f1": 0.9262359816774601,
+            "support": 2999
+          },
+          {
+            "class": "ddos",
+            "precision": 0.9807826694619147,
+            "recall": 0.9362908605737158,
+            "f1": 0.9580204778156997,
+            "support": 2998
+          },
+          {
+            "class": "dos",
+            "precision": 0.8940650925335035,
+            "recall": 0.9343114371457152,
+            "f1": 0.9137453122452307,
+            "support": 2999
+          },
+          {
+            "class": "injection",
+            "precision": 0.9568197395476353,
+            "recall": 0.9309769923307769,
+            "f1": 0.943721480479973,
+            "support": 2999
+          },
+          {
+            "class": "password",
+            "precision": 0.976304945054945,
+            "recall": 0.9479826608869624,
+            "f1": 0.9619353747250888,
+            "support": 2999
+          },
+          {
+            "class": "scanning",
+            "precision": 0.947166921898928,
+            "recall": 0.8249416472157386,
+            "f1": 0.8818392443414721,
+            "support": 2999
+          },
+          {
+            "class": "ransomware",
+            "precision": 0.9175455417066155,
+            "recall": 0.957,
+            "f1": 0.9368575624082232,
+            "support": 3000
+          },
+          {
+            "class": "xss",
+            "precision": 0.8697866921362624,
+            "recall": 0.910970323441147,
+            "f1": 0.8899022801302932,
+            "support": 2999
+          },
+          {
+            "class": "mitm",
+            "precision": 0.5076923076923077,
+            "recall": 0.42038216560509556,
+            "f1": 0.45993031358885017,
+            "support": 157
+          }
+        ]
+      },
+      "complexity": {
+        "n_params": 1216842,
+        "flops_per_forward": 1496842240,
+        "gflops_per_forward": 1.49684224,
+        "throughput_samples_per_sec": 530805.9230454152,
+        "latency_ms_mean": 0.9645710000040708,
+        "peak_memory_mb": 73.28466796875,
+        "batch_size": 512,
+        "device": "cuda:0"
+      }
+    },
+    "gru": {
+      "basic": {
+        "accuracy": 0.7760679979777553,
+        "precision_macro": 0.7023763676030566,
+        "recall_macro": 0.6946749553005924,
+        "f1_macro": 0.6757779709726928,
+        "auc_roc_ovr": 0.9664335552540958,
+        "fpr": 0.0249436531016227
+      },
+      "advanced": {
+        "kappa": 0.7443418857162442,
+        "kappa_ci_low": 0.7394246916784865,
+        "kappa_ci_high": 0.7493880829624552,
+        "mcc": 0.7521038611107961,
+        "mcc_ci_low": 0.7473664604982136,
+        "mcc_ci_high": 0.7572991535148326,
+        "accuracy_ci_low": 0.7717067429221436,
+        "accuracy_ci_high": 0.7807452287664307,
+        "f1_macro_ci_low": 0.6719236208637565,
+        "f1_macro_ci_high": 0.6794195217423148,
+        "ece": 0.014390888433673709,
+        "brier": 0.2996339201927185,
+        "per_class": [
+          {
+            "class": "normal",
+            "precision": 0.9514473885740542,
+            "recall": 0.8283771169489266,
+            "f1": 0.885657256914742,
+            "support": 7499
+          },
+          {
+            "class": "backdoor",
+            "precision": 0.4547475389012385,
+            "recall": 0.9549849949983328,
+            "f1": 0.6161127245347962,
+            "support": 2999
+          },
+          {
+            "class": "ddos",
+            "precision": 0.9066265060240963,
+            "recall": 0.9036024016010674,
+            "f1": 0.9051119278316071,
+            "support": 2998
+          },
+          {
+            "class": "dos",
+            "precision": 0.5105882352941177,
+            "recall": 0.14471490496832276,
+            "f1": 0.22551312029098466,
+            "support": 2999
+          },
+          {
+            "class": "injection",
+            "precision": 0.9167217448777264,
+            "recall": 0.924974991663888,
+            "f1": 0.9208298755186722,
+            "support": 2999
+          },
+          {
+            "class": "password",
+            "precision": 0.938663282571912,
+            "recall": 0.7399133044348116,
+            "f1": 0.8275219093790789,
+            "support": 2999
+          },
+          {
+            "class": "scanning",
+            "precision": 0.7912804668726399,
+            "recall": 0.7685895298432811,
+            "f1": 0.7797699594046008,
+            "support": 2999
+          },
+          {
+            "class": "ransomware",
+            "precision": 0.6724479682854311,
+            "recall": 0.9046666666666666,
+            "f1": 0.7714610574189881,
+            "support": 3000
+          },
+          {
+            "class": "xss",
+            "precision": 0.8812405446293494,
+            "recall": 0.7769256418806268,
+            "f1": 0.8258018784334574,
+            "support": 2999
+          },
+          {
+            "class": "mitm",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 157
+          }
+        ]
+      },
+      "complexity": {
+        "n_params": 650122,
+        "flops_per_forward": 4548984832,
+        "gflops_per_forward": 4.548984832,
+        "throughput_samples_per_sec": 673595.5795552343,
+        "latency_ms_mean": 0.7600999999704072,
+        "peak_memory_mb": 86.79443359375,
+        "batch_size": 512,
+        "device": "cuda:0"
+      }
+    },
+    "lstm": {
+      "basic": {
+        "accuracy": 0.7385616784630941,
+        "precision_macro": 0.6535614791309687,
+        "recall_macro": 0.6558569503418794,
+        "f1_macro": 0.6331954854998848,
+        "auc_roc_ovr": 0.9593916394548415,
+        "fpr": 0.029052793775387952
+      },
+      "advanced": {
+        "kappa": 0.7016608889702454,
+        "kappa_ci_low": 0.6962740543313332,
+        "kappa_ci_high": 0.7069328326817487,
+        "mcc": 0.7096018035383885,
+        "mcc_ci_low": 0.7045210452448443,
+        "mcc_ci_high": 0.7148617696612414,
+        "accuracy_ci_low": 0.7336316670879677,
+        "accuracy_ci_high": 0.7433344919110213,
+        "f1_macro_ci_low": 0.6290886891636226,
+        "f1_macro_ci_high": 0.6374133098686833,
+        "ece": 0.01794119937631657,
+        "brier": 0.3485822081565857,
+        "per_class": [
+          {
+            "class": "normal",
+            "precision": 0.9586956521739131,
+            "recall": 0.8233097746366183,
+            "f1": 0.8858598177774589,
+            "support": 7499
+          },
+          {
+            "class": "backdoor",
+            "precision": 0.4481378885811019,
+            "recall": 0.9709903301100367,
+            "f1": 0.6132462883015689,
+            "support": 2999
+          },
+          {
+            "class": "ddos",
+            "precision": 0.9056347589952478,
+            "recall": 0.8899266177451635,
+            "f1": 0.8977119784656796,
+            "support": 2998
+          },
+          {
+            "class": "dos",
+            "precision": 0.41289437585733885,
+            "recall": 0.10036678892964321,
+            "f1": 0.16148068669527896,
+            "support": 2999
+          },
+          {
+            "class": "injection",
+            "precision": 0.8152173913043478,
+            "recall": 0.7252417472490831,
+            "f1": 0.7676019057702488,
+            "support": 2999
+          },
+          {
+            "class": "password",
+            "precision": 0.7291814946619217,
+            "recall": 0.6832277425808603,
+            "f1": 0.705457049406094,
+            "support": 2999
+          },
+          {
+            "class": "scanning",
+            "precision": 0.7895097703119643,
+            "recall": 0.7679226408802934,
+            "f1": 0.7785665990534145,
+            "support": 2999
+          },
+          {
+            "class": "ransomware",
+            "precision": 0.6482758620689655,
+            "recall": 0.846,
+            "f1": 0.734056399132321,
+            "support": 3000
+          },
+          {
+            "class": "xss",
+            "precision": 0.8280675973548861,
+            "recall": 0.7515838612870956,
+            "f1": 0.7879741303967838,
+            "support": 2999
+          },
+          {
+            "class": "mitm",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 157
+          }
+        ]
+      },
+      "complexity": {
+        "n_params": 855434,
+        "flops_per_forward": 6053691392,
+        "gflops_per_forward": 6.053691392,
+        "throughput_samples_per_sec": 376590.2109961508,
+        "latency_ms_mean": 1.3595680000435095,
+        "peak_memory_mb": 99.57373046875,
+        "batch_size": 512,
+        "device": "cuda:0"
+      }
+    }
+  },
+  "pairwise_vs_proposed": [
+    {
+      "baseline": "cnn_lstm",
+      "mcnemar": {
+        "b": 342,
+        "c": 302,
+        "statistic": 2.361801242236025,
+        "p_value": 0.12433854755092745,
+        "odds_ratio": {
+          "odds_ratio": 1.1322314049586777,
+          "log_or": 0.12419038023138383,
+          "ci_low": 0.9700020086502249,
+          "ci_high": 1.321593092532411
+        }
+      },
+      "wilcoxon_paired_nll": {
+        "statistic": 156077520.0,
+        "p_value": 0.0
+      },
+      "paired_bootstrap_correctness": {
+        "observed_diff": 0.0012639029322547568,
+        "bootstrap_mean_diff": 0.0012718339231547018,
+        "ci_low": -0.00025278058645095136,
+        "ci_high": 0.0028437815975732583,
+        "p_value_one_sided": 0.0565
+      },
+      "effect_size_nll": {
+        "cohen_d": 0.023709729313850403,
+        "hedges_g": 0.023709166795015335,
+        "n": 31648,
+        "interpretation": "negligible"
+      },
+      "mcnemar_holm": {
+        "p_raw": 0.12433854755092745,
+        "p_adj": 0.12433854755092745,
+        "reject": false
+      },
+      "wilcoxon_holm": {
+        "p_raw": 0.0,
+        "p_adj": 0.0,
+        "reject": true
+      }
+    },
+    {
+      "baseline": "gru",
+      "mcnemar": {
+        "b": 5356,
+        "c": 193,
+        "statistic": 4801.99026851685,
+        "p_value": 0.0,
+        "odds_ratio": {
+          "odds_ratio": 27.68217054263566,
+          "log_or": 3.3207885432327764,
+          "ci_low": 23.9834652401322,
+          "ci_high": 31.951286366629375
+        }
+      },
+      "wilcoxon_paired_nll": {
+        "statistic": 25355476.0,
+        "p_value": 0.0
+      },
+      "paired_bootstrap_correctness": {
+        "observed_diff": 0.1631382709807887,
+        "bootstrap_mean_diff": 0.1631846720171891,
+        "ci_low": 0.1589041961577351,
+        "ci_high": 0.16749952603640042,
+        "p_value_one_sided": 0.0
+      },
+      "effect_size_nll": {
+        "cohen_d": 0.5506744980812073,
+        "hedges_g": 0.5506614446640015,
+        "n": 31648,
+        "interpretation": "medium"
+      },
+      "mcnemar_holm": {
+        "p_raw": 0.0,
+        "p_adj": 0.0,
+        "reject": true
+      },
+      "wilcoxon_holm": {
+        "p_raw": 0.0,
+        "p_adj": 0.0,
+        "reject": true
+      }
+    },
+    {
+      "baseline": "lstm",
+      "mcnemar": {
+        "b": 6524,
+        "c": 174,
+        "statistic": 6018.184681994625,
+        "p_value": 0.0,
+        "odds_ratio": {
+          "odds_ratio": 37.38968481375358,
+          "log_or": 3.6213948592598197,
+          "ci_low": 32.17049100524457,
+          "ci_high": 43.45561683357364
+        }
+      },
+      "wilcoxon_paired_nll": {
+        "statistic": 22745386.0,
+        "p_value": 0.0
+      },
+      "paired_bootstrap_correctness": {
+        "observed_diff": 0.20064459049544991,
+        "bootstrap_mean_diff": 0.20075241721435794,
+        "ci_low": 0.19612613751263908,
+        "ci_high": 0.20535341885743177,
+        "p_value_one_sided": 0.0
+      },
+      "effect_size_nll": {
+        "cohen_d": 0.6345386505126953,
+        "hedges_g": 0.6345235705375671,
+        "n": 31648,
+        "interpretation": "medium"
+      },
+      "mcnemar_holm": {
+        "p_raw": 0.0,
+        "p_adj": 0.0,
+        "reject": true
+      },
+      "wilcoxon_holm": {
+        "p_raw": 0.0,
+        "p_adj": 0.0,
+        "reject": true
+      }
+    }
+  ],
+  "friedman_nemenyi": null,
+  "class_names": [
+    "normal",
+    "backdoor",
+    "ddos",
+    "dos",
+    "injection",
+    "password",
+    "scanning",
+    "ransomware",
+    "xss",
+    "mitm"
+  ]
+}

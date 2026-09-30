@@ -1,0 +1,19 @@
+{
+  "model": "mamba_nids",
+  "training_mode": "adversarial",
+  "epsilon": 0.05,
+  "pgd_steps": 7,
+  "epochs": 10,
+  "clean_weight": 0.5,
+  "metrics": {
+    "accuracy": 0.719855915065723,
+    "precision_macro": 0.6893509556172934,
+    "recall_macro": 0.6631655710375062,
+    "f1_macro": 0.6443309389242057,
+    "auc_roc_ovr": 0.9621123996465426,
+    "fpr": 0.031064643819411507
+  },
+  "latency_ms_mean": 3.3346255007199943,
+  "latency_ms_std": 0.38568354365913465,
+  "n_params": 1632843
+}

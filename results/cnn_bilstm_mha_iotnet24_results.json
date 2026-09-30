@@ -1,0 +1,17 @@
+{
+  "model": "cnn_bilstm_mha",
+  "metrics": {
+    "accuracy": 0.9965347964192897,
+    "precision_macro": 0.9948330189851259,
+    "recall_macro": 0.9822027201630601,
+    "f1_macro": 0.9884186024734627,
+    "auc_roc_ovr": NaN,
+    "fpr": 0.017797279836939895
+  },
+  "latency_ms_mean": 2.803479999784031,
+  "latency_ms_std": 0.39701320595049594,
+  "best_epoch": 8,
+  "best_val_loss": 0.0140825236231551,
+  "n_features": 11,
+  "n_params": 3972098
+}

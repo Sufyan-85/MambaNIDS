@@ -1,0 +1,17 @@
+{
+  "model": "lstm",
+  "metrics": {
+    "accuracy": 0.8136450488928852,
+    "precision_macro": 0.82663537790569,
+    "recall_macro": 0.8199497003985259,
+    "f1_macro": 0.7881553768734519,
+    "auc_roc_ovr": 0.9819188269693774,
+    "fpr": 0.0207741409246001
+  },
+  "latency_ms_mean": 1.4012980004190467,
+  "latency_ms_std": 0.6829609756488951,
+  "best_epoch": 15,
+  "best_val_loss": 0.26139155364204164,
+  "n_features": 106,
+  "n_params": 933258
+}

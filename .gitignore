@@ -1,0 +1,81 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# === PyTorch checkpoints (too large for a research repo) ===
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+checkpoints/
+
+# === Raw datasets (bind-mount instead) ===
+data/
+TON_IoT*/
+N-BaIoT/
+IoTNet24*/
+*.csv.gz
+*.tsv
+!results/*.json     # keep the result JSONs
+
+# === LaTeX build artefacts ===
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.thm
+*.upa
+*.upb
+
+# === OS junk ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Editors ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === Local secrets / configs ===
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+
+# === Notebook outputs ===
+.ipynb_checkpoints/
+
+# === Compiled/transient artefacts inside the repo ===
+scratchpad/
+tmp/
+*.pyc

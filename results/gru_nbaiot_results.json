@@ -1,0 +1,17 @@
+{
+  "model": "gru",
+  "metrics": {
+    "accuracy": 0.8014686598478888,
+    "precision_macro": 0.8120146187265632,
+    "recall_macro": 0.8043251187137894,
+    "f1_macro": 0.7940777677755116,
+    "auc_roc_ovr": 0.9803689081217755,
+    "fpr": 0.0222157157809028
+  },
+  "latency_ms_mean": 1.7960460000904277,
+  "latency_ms_std": 1.2969108052235863,
+  "best_epoch": 15,
+  "best_val_loss": 0.26695222389325063,
+  "n_features": 106,
+  "n_params": 708490
+}

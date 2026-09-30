@@ -1,0 +1,106 @@
+[
+  {
+    "variant": "full",
+    "label": "Full (Mamba+MHA+FDAttn)",
+    "kwargs": {
+      "n_mamba_layers": 2,
+      "use_mha": true,
+      "use_freq_attention": true
+    },
+    "metrics": {
+      "accuracy": 0.9384163296258847,
+      "precision_macro": 0.8866383631342915,
+      "recall_macro": 0.8866867664355214,
+      "f1_macro": 0.8859722610561509,
+      "auc_roc_ovr": 0.9950772592995479,
+      "fpr": 0.0068449282229537875
+    },
+    "latency_ms_mean": 9.768308000202524,
+    "latency_ms_std": 3.7727258770872814,
+    "n_params": 1632843,
+    "best_epoch": 14,
+    "best_val_loss": 0.09619025513306258,
+    "train_time_s": 692.0319576263428,
+    "delta_acc_vs_full": 0.0,
+    "delta_f1_vs_full": 0.0,
+    "param_ratio_vs_full": 1.0
+  },
+  {
+    "variant": "no_fdattn",
+    "label": "no FDAttn",
+    "kwargs": {
+      "n_mamba_layers": 2,
+      "use_mha": true,
+      "use_freq_attention": false
+    },
+    "metrics": {
+      "accuracy": 0.934087462082912,
+      "precision_macro": 0.8895457590176982,
+      "recall_macro": 0.8854406932603043,
+      "f1_macro": 0.8864680669056595,
+      "auc_roc_ovr": 0.9941754324302889,
+      "fpr": 0.007326862782002168
+    },
+    "latency_ms_mean": 4.6111899995594285,
+    "latency_ms_std": 0.8773278629158844,
+    "n_params": 1369930,
+    "best_epoch": 15,
+    "best_val_loss": 0.10168234233120733,
+    "train_time_s": 448.31981682777405,
+    "delta_acc_vs_full": -0.004328867542972681,
+    "delta_f1_vs_full": 0.0004958058495085904,
+    "param_ratio_vs_full": 0.8389845196384466
+  },
+  {
+    "variant": "no_mha",
+    "label": "no MHA",
+    "kwargs": {
+      "n_mamba_layers": 2,
+      "use_mha": false,
+      "use_freq_attention": true
+    },
+    "metrics": {
+      "accuracy": 0.8950012639029322,
+      "precision_macro": 0.8511486072145159,
+      "recall_macro": 0.836830442776755,
+      "f1_macro": 0.8369052770739447,
+      "auc_roc_ovr": 0.9911951742934075,
+      "fpr": 0.011660744646313208
+    },
+    "latency_ms_mean": 4.409098000396625,
+    "latency_ms_std": 0.7434814085421542,
+    "n_params": 1369163,
+    "best_epoch": 12,
+    "best_val_loss": 0.13014062851473487,
+    "train_time_s": 364.3954315185547,
+    "delta_acc_vs_full": -0.043415065722952506,
+    "delta_f1_vs_full": -0.049066983982206214,
+    "param_ratio_vs_full": 0.8385147867859923
+  },
+  {
+    "variant": "no_mamba",
+    "label": "no Mamba",
+    "kwargs": {
+      "n_mamba_layers": 0,
+      "use_mha": true,
+      "use_freq_attention": true
+    },
+    "metrics": {
+      "accuracy": 0.9355093528816987,
+      "precision_macro": 0.8931029099437598,
+      "recall_macro": 0.8707634414999321,
+      "f1_macro": 0.8779793162570518,
+      "auc_roc_ovr": 0.9947055709091359,
+      "fpr": 0.007195525290290593
+    },
+    "latency_ms_mean": 2.7397974993800744,
+    "latency_ms_std": 0.5304704597695479,
+    "n_params": 756811,
+    "best_epoch": 15,
+    "best_val_loss": 0.09138790382482788,
+    "train_time_s": 296.8625946044922,
+    "delta_acc_vs_full": -0.0029069767441860517,
+    "delta_f1_vs_full": -0.007992944799099067,
+    "param_ratio_vs_full": 0.46349281590452973
+  }
+]

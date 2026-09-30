@@ -1,0 +1,17 @@
+{
+  "model": "transformer_ids",
+  "metrics": {
+    "accuracy": 0.861563823011502,
+    "precision_macro": 0.8648616178465082,
+    "recall_macro": 0.8648134261168547,
+    "f1_macro": 0.853414994087478,
+    "auc_roc_ovr": 0.9868806633480626,
+    "fpr": 0.015476213764834667
+  },
+  "latency_ms_mean": 8.789322998491116,
+  "latency_ms_std": 0.5514975046132689,
+  "best_epoch": 15,
+  "best_val_loss": 0.19447285828867078,
+  "n_features": 106,
+  "n_params": 2169994
+}

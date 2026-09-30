@@ -1,0 +1,17 @@
+{
+  "model": "cnn_lstm",
+  "metrics": {
+    "accuracy": 0.9965347964192897,
+    "precision_macro": 0.9948330189851259,
+    "recall_macro": 0.9822027201630601,
+    "f1_macro": 0.9884186024734627,
+    "auc_roc_ovr": NaN,
+    "fpr": 0.017797279836939895
+  },
+  "latency_ms_mean": 0.9463875001529232,
+  "latency_ms_std": 0.35760862163631685,
+  "best_epoch": 4,
+  "best_val_loss": 0.013367126465212474,
+  "n_features": 11,
+  "n_params": 1212162
+}

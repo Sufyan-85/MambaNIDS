@@ -1,0 +1,17 @@
+{
+  "model": "mamba_nids",
+  "metrics": {
+    "accuracy": 0.896182233711738,
+    "precision_macro": 0.897876352530354,
+    "recall_macro": 0.8972459908533732,
+    "f1_macro": 0.8923015778350523,
+    "auc_roc_ovr": 0.9888649484101609,
+    "fpr": 0.011550129341680695
+  },
+  "latency_ms_mean": 3.6237224999058526,
+  "latency_ms_std": 0.795726718618467,
+  "best_epoch": 15,
+  "best_val_loss": 0.1476892000259171,
+  "n_features": 106,
+  "n_params": 1647435
+}
